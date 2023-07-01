@@ -16,7 +16,8 @@ services:
       MYSQL_DATABASE: "camagru"
     volumes:
       - ./dbData:/var/lib/mysql
-      
+    restart: always
+
   phpmyadmin:
     image: phpmyadmin
     ports:
